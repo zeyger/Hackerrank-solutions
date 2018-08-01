@@ -25,7 +25,7 @@ def mode(arr):
         else:
             prev = elem
             count += 1
-    if count > mode_count:  # because elems doesn't change last time and don't trigger this check
+    if count > mode_count:  # because elems don't change last time and don't trigger this check
         mode = prev
     return mode
 
@@ -42,8 +42,8 @@ def main():
     line = sys.stdin.readline()
     arr = np.array(line.split(' ')).astype(int)
     arr.sort()
-    men = "{0:.1f}".format(mean(arr)).replace('.0', '')
-    med = "{0:.1f}".format(median(arr)).replace('.0', '')
+    men = "{0:.1f}".format(mean(arr)).replace('.0', '') # some dirty stuff here hehehehe
+    med = "{0:.1f}".format(median(arr)).replace('.0', '') # and here as well
     mod = mode(arr)
     print(men)
     print(med)
