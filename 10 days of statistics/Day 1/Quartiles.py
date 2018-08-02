@@ -14,15 +14,15 @@ def main():
     arr = list(map(int, line.split(' ')))
     arr.sort()
 
-    q1 = median(arr[:len(arr) // 2])  # 0 1 2
+    q1 = median(arr[:len(arr) // 2])  
     q2 = median(arr)
     q3 = 0
+    
     arr_len_even = len(arr) % 2 == 0
-
     if arr_len_even:  # 0 1 2 3 4 5
         q3 = median(arr[len(arr) // 2:])  # 3 4 5
     else:  # 0 1 2 3 4 5 6
-        q3 = median(arr[len(arr) // 2 + 1:])  # 3 4 5
+        q3 = median(arr[len(arr) // 2 + 1:])  # 4 5 6
 
     print(int(q1))
     print(int(q2))
