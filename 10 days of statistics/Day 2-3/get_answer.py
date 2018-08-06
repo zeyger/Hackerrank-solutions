@@ -6,4 +6,4 @@ def get_quiz_answer():
 
 
 if __name__ == '__main__':
-    print('The quiz solution is ' + get_quiz_answer())
+    print('The quiz solution is ' + get_quiz_answer())  # absolutely correct answer
