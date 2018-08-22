@@ -2,4 +2,5 @@
 These are my solutions for Hackerrank quizzes
 
 
-yup, only 10 days if statistics are present here **YET**
+yup, only 10 days of statistics are present here **YET**
+
